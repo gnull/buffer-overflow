@@ -5,7 +5,7 @@
 void read_file(FILE *f){
   char buf[100];
   printf("%p\n", buf);
-  scanf("%s", 0);
+  getc(stdin);
 
   int size = fread(buf, 1, 1000, f);
   printf("%d\n", size);
